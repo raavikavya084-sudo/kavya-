@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saranya | Creative Portfolio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: #0b0b0b;
+      color: #f5f2ed;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    header {
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #292929;
+    }
+    .logo { font-size: 21px; font-weight: bold; }
+    nav { display: flex; gap: 20px; flex-wrap: wrap; }
+    a { color: inherit; text-decoration: none; }
+    nav a { color: #bbb; font-size: 14px; }
+    nav a:hover { color: #d9b98c; }
+    section { padding: 80px 8%; }
+    .hero { min-height: 75vh; display: flex; flex-direction: column;
+      justify-content: center; align-items: flex-start; }
+    .tag { color: #d9b98c; letter-spacing: 3px; font-size: 12px; }
+    h1 { font-size: clamp(42px, 8vw, 85px); line-height: 1.05;
+      margin: 20px 0; max-width: 850px; }
+    h1 span { color: #d9b98c; }
+    .intro { color: #aaa; max-width: 570px; margin-bottom: 28px; }
+    .btn { display: inline-block; padding: 12px 22px;
+      background: #d9b98c; color: #111; border-radius: 3px;
+      font-weight: bold; margin: 5px 8px 5px 0; }
+    .btn.outline { background: transparent; color: #eee;
+      border: 1px solid #555; }
+    h2 { font-size: clamp(28px, 4vw, 42px); margin-bottom: 18px; }
+    .muted { color: #aaa; }
+    .grid { display: grid; grid-template-columns: repeat(2, 1fr);
+      gap: 18px; margin-top: 28px; }
+    .card { padding: 26px; background: #151515;
+      border: 1px solid #292929; border-radius: 8px; }
+    .card h3 { margin-bottom: 8px; }
+    .number { color: #d9b98c; font-size: 13px; margin-bottom: 12px; }
+    .skills { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+    .skills span { padding: 10px 14px; border: 1px solid #444;
+      border-radius: 30px; color: #ddd; }
+    .contact { background: #151515; }
+    footer { padding: 25px 8%; color: #888; font-size: 13px; }
+    @media(max-width: 600px) {
+      header { align-items: flex-start; gap: 15px; flex-direction: column; }
+      .grid { grid-template-columns: 1fr; }
+      section { padding: 60px 6%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="logo" href="#home">SARANYA<span style="color:#d9b98c">.</span></a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <p class="tag">VIDEO EDITOR · CREATIVE STORYTELLER</p>
+    <h1>I turn ideas into <span>visual stories.</span></h1>
+    <p class="intro">Hi, I'm Saranya. I create cinematic edits,
+      engaging reels and creative content for brands and people.</p>
+    <div>
+      <a class="btn" href="#work">Explore My Work ↗</a>
+      <a class="btn outline" href="#contact">Let's Connect</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <p class="tag">A LITTLE ABOUT ME</p>
+    <h2>Creative mind. Curious soul.</h2>
+    <p class="muted">I'm a creative freelancer passionate about video
+      editing, fashion, styling and digital content. I love turning
+      simple ideas into engaging visual experiences and I'm always
+      learning something new.</p>
+  </section>
+
+  <section id="work">
+    <p class="tag">SELECTED PROJECTS</p>
+    <h2>Things I've created.</h2>
+    <p class="muted">Replace these sample cards with your real projects.</p>
+    <div class="grid">
+      <article class="card">
+        <p class="number">PROJECT 01</p>
+        <h3>Cinematic Reels</h3>
+        <p class="muted">Transitions, color grading and storytelling.</p>
+      </article>
+      <article class="card">
+        <p class="number">PROJECT 02</p>
+        <h3>UGC Advertisements</h3>
+        <p class="muted">Short-form promotional content for brands.</p>
+      </article>
+      <article class="card">
+        <p class="number">PROJECT 03</p>
+        <h3>Fashion & Styling</h3>
+        <p class="muted">Creative looks, outfits and visual concepts.</p>
+      </article>
+      <article class="card">
+        <p class="number">PROJECT 04</p>
+        <h3>Social Media Content</h3>
+        <p class="muted">Reels and content ideas for online audiences.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="about-skills">
+    <p class="tag">WHAT I DO</p>
+    <h2>My creative toolkit.</h2>
+    <div class="skills">
+      <span>Video Editing</span>
+      <span>Cinematic Reels</span>
+      <span>InShot</span>
+      <span>Fashion Styling</span>
+      <span>Content Creation</span>
+      <span>Digital Marketing</span>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <p class="tag">HAVE A PROJECT IN MIND?</p>
+    <h2>Let's create something good.</h2>
+    <p class="muted">I'm open to creative collaborations and freelance projects.</p>
+    <a class="btn" href="mailto:YOUR_EMAIL@example.com">Email Me ↗</a>
+    <a class="btn outline" href="https://instagram.com/YOUR_USERNAME">Instagram ↗</a>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Saranya. Made with creativity.
+  </footer>
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>
